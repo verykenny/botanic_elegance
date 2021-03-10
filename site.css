@@ -1,3 +1,92 @@
-h1 {
-  color: red;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* big screen */
+#hamnav {
+  width: 100%;
+  background: rgb(100, 190, 40);
+  position: sticky;
+  top: 0;
+}
+
+
+#hamnav label, #hamburger {
+  display: none;
+}
+
+#hamitems {
+  display: flex;
+}
+
+#hamitems a {
+  width: 50%;
+  padding: 10px;
+  color: rgb(44, 44, 44);
+  text-align: center;
+  text-decoration: none;
+}
+
+#hamitems a:hover {
+  background: rgb(66, 126, 26);
+}
+
+/* small screen */
+@media screen and (max-width: 599px) {
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: rgb(100, 190, 40);
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  #hamitems {
+    display: none
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+.temp {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100%;
+}
+
+.soon {
+  position: relative;
+  bottom: 5.5em;
+  left: 3.5em;
+  text-align: center;
+  color: rgba(182, 5, 5, 0.795);
+}
+
+.contact {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  border: 1px solid rgb(211, 211, 211);
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.contact ul {
+  margin-left: 2em;
 }
