@@ -5,6 +5,10 @@ body {
 }
 
 /* big screen */
+nav {
+  box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+}
+
 #hamnav {
   width: 100%;
   background: rgb(100, 190, 40);
@@ -35,6 +39,7 @@ a {
 
 #hamitems a:hover {
   background: rgb(66, 126, 26);
+  box-shadow: 0 4px 2px rgb(0 0 0 / 10%);
 }
 
 /* small screen */
@@ -89,6 +94,7 @@ a {
   border: 1px solid rgb(211, 211, 211);
   margin: 50px auto;
   overflow: hidden;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
 
 .contact ul {
